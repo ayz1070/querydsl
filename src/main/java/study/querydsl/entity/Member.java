@@ -24,11 +24,13 @@ public class Member {
         this.age = age;
         if(team != null){
             changeTeam(team);
+
         }
     }
 
     public void changeTeam(Team team){
         this.team = team;
         team.getMembers().add(this);
+
     }
 }
